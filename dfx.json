@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "dfx": "0.17.0",
+  "canisters": {
+    "profile": {
+      "type": "motoko",
+      "main": "canisters/profile/main.mo"
+    },
+    "assessment": {
+      "type": "motoko",
+      "main": "canisters/assessment/main.mo"
+    },
+    "vector": {
+      "type": "motoko",
+      "main": "canisters/vector/main.mo"
+    },
+    "llm": {
+      "type": "motoko",
+      "main": "canisters/llm/main.mo"
+    },
+    "tutor": {
+      "type": "motoko",
+      "main": "canisters/tutor/main.mo",
+      "dependencies": [
+        "profile",
+        "assessment",
+        "vector",
+        "llm"
+      ]
+    },
+    "frontend": {
+      "type": "assets",
+      "source": [
+        "frontend/build"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943"
+    },
+    "ic": {
+      "providers": [
+        "https://ic0.app"
+      ]
+    }
+  }
+}
