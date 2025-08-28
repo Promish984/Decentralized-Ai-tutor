@@ -1,0 +1,22 @@
+type Item = 
+ record {
+   choices: vec text;
+   difficulty: float64;
+   id: text;
+   key: nat32;
+   stem: text;
+   topic_id: text;
+ };
+service : {
+  get_next_item: (record {
+                    ability: float64;
+                    topic_id: text;
+                  }) ->
+   (opt record {
+          choices: vec text;
+          id: text;
+          stem: text;
+        }) query;
+  grade_mcq: (text, nat32) -> (bool) query;
+  upsert_item: (Item) -> (bool);
+}
