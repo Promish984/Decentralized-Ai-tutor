@@ -1,0 +1,20 @@
+{
+  "assessment": {
+    "local": "bkyz2-fmaaa-aaaaa-qaaaq-cai"
+  },
+  "frontend": {
+    "local": "bd3sg-teaaa-aaaaa-qaaba-cai"
+  },
+  "llm": {
+    "local": "be2us-64aaa-aaaaa-qaabq-cai"
+  },
+  "profile": {
+    "local": "br5f7-7uaaa-aaaaa-qaaca-cai"
+  },
+  "tutor": {
+    "local": "bw4dl-smaaa-aaaaa-qaacq-cai"
+  },
+  "vector": {
+    "local": "b77ix-eeaaa-aaaaa-qaada-cai"
+  }
+}
